@@ -616,7 +616,7 @@
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-overlay/-/cli-overlay-3.2.0.tgz#bb5d781914bb5af97d92410babbaa3720707b728"
 
-"@vue/cli-plugin-babel@^3.2.0":
+"@vue/cli-plugin-babel@^3.2.1":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-3.2.0.tgz#5548e052f07512156942f50dcf18948ad29be7ec"
   dependencies:
@@ -624,7 +624,7 @@
     "@vue/babel-preset-app" "^3.2.0"
     babel-loader "^8.0.4"
 
-"@vue/cli-plugin-eslint@^3.2.0":
+"@vue/cli-plugin-eslint@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-3.2.1.tgz#4dc353add93023363bf4c6b347e64472d1f2f432"
   dependencies:
@@ -635,7 +635,7 @@
     eslint-plugin-vue "^4.7.1"
     globby "^8.0.1"
 
-"@vue/cli-service@^3.2.0":
+"@vue/cli-service@^3.2.1":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.2.0.tgz#96e8ee7b33a911ab71710c126ab55cd64c2a4c51"
   dependencies:
@@ -941,8 +941,8 @@ ajv@^5.2.3, ajv@^5.3.0:
     json-schema-traverse "^0.3.0"
 
 ajv@^6.1.0, ajv@^6.5.3, ajv@^6.5.5:
-  version "6.5.5"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.5.5.tgz#cf97cdade71c6399a92c6d6c4177381291b781a1"
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.6.0.tgz#762e4a2f97cf423c9a2472b819f227c3a081a895"
   dependencies:
     fast-deep-equal "^2.0.1"
     fast-json-stable-stringify "^2.0.0"
@@ -3394,8 +3394,8 @@ hoek@5.x.x:
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-5.0.4.tgz#0f7fa270a1cafeb364a4b2ddfaa33f864e4157da"
 
 hoek@6.x.x:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/hoek/-/hoek-6.0.4.tgz#8db638130825534575e8e4e80f97ca66108e6382"
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/hoek/-/hoek-6.1.1.tgz#dae8ca1c97b091b123281d87d4eba38d71580b7d"
 
 hoopy@^0.1.2:
   version "0.1.4"
@@ -4643,8 +4643,8 @@ node-pre-gyp@^0.10.0:
     tar "^4"
 
 node-releases@^1.0.1:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.0.4.tgz#2d585de8c6c81d00017e063e7810a63889aa6756"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.0.5.tgz#a641adcc968b039a27345d92ef10b093e5cbd41d"
   dependencies:
     semver "^5.3.0"
 
@@ -6914,6 +6914,10 @@ vue-loader@^15.4.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-router@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.2.tgz#dedc67afe6c4e2bc25682c8b1c2a8c0d7c7e56be"
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
@@ -6935,6 +6939,10 @@ vue-template-es2015-compiler@^1.6.0:
 vue@^2.5.17:
   version "2.5.17"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
+
+vuex@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.0.1.tgz#e761352ebe0af537d4bb755a9b9dc4be3df7efd2"
 
 watchpack@^1.5.0:
   version "1.6.0"

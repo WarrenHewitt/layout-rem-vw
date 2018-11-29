@@ -1,4 +1,21 @@
-# vue-mobile-with-rem
-移动端使用rem方式适配
+# tt
 
-- 注意先删除meta viewport 标签 
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
