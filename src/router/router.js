@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import HelloWorld from '../views/HelloWorld'
+import Flexible from '../views/Flexible'
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
@@ -9,8 +9,8 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
-        name: 'home',
-        component: HelloWorld
+        name: 'flexible',
+        component: Flexible
     },
     {
         path: '/about',
