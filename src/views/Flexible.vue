@@ -5,8 +5,8 @@
                 <img src="../assets/t1.jpg" alt="no">
             </div>
             <div class="d2">
-                <div>不使用分号，而是用换行符来分隔属性有些语法上稍有差异</div>
-                <div class="btn">马上抢</div>
+                <div>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
+                <div class="btn">购买</div>
             </div>
         </div>
     </div>
@@ -19,9 +19,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// @mixin pxToRem ($px: ){
-//     background-color: red;
-// }
+@mixin pxToRem ($px, $baseFont: 16px) {
+    @if () {
+
+    } @else {
+
+    }
+    background-color: red;
+}
 
 .test-img {
     margin-top: 1rem;
