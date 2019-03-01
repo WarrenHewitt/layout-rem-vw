@@ -1,11 +1,12 @@
 <template>
     <div class="hello">
+        <div class="info">这是设计稿750px宽度</div>
         <div class="test-img">
             <div class="d1">
                 <img src="../assets/t1.jpg" alt="no">
             </div>
             <div class="d2">
-                <div>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
+                <div class="t">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
                 <div class="btn">购买</div>
             </div>
         </div>
@@ -14,18 +15,38 @@
 
 <script>
 export default {
-    name: 'HelloWorld'
+    name: 'HelloWorld',
+    mounted () {
+    }
 }
 </script>
 
 <style scoped lang="scss">
-@mixin pxToRem ($px, $baseFont: 16px) {
-    @if () {
+.t {
+    color: if(true, rgb(46, 78, 114), red);
+}
 
-    } @else {
+@mixin pxToRem($property, $px, $baseFontSize: 75) {
+    #{$property} : $px / $baseFontSize * 1rem
+}
 
+@mixin fontSize($font-size){
+    font-size: $font-size;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
     }
-    background-color: red;
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+
+.info{
+    @include pxToRem(width, 750);
+    @include pxToRem(height, 60);
+    @include pxToRem(line-height, 60);
+    @include fontSize(16px);
+    color: rgb(253, 255, 254);
+    background-color: rgb(94, 92, 92);
 }
 
 .test-img {
