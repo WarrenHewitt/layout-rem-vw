@@ -18,6 +18,13 @@
     #{$property} : $px / $baseFontSize * 1rem
 }
 ```
+// 多个属性
+@mixin each($param) {
+    @each $key, $px in $param{
+        #{$key}: $px / $baseFontSize * 1rem ;
+    }
+}
+
 @mixin emCalc($props,$sizes,$base:$base-font-size){
     $values: (); $sublists: false;
     @each $s in $sizes {

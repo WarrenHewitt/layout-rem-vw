@@ -3,12 +3,16 @@
         <div class="info">这是设计稿750px宽度</div>
         <div class="test-img">
             <div class="d1">
-                <img src="../assets/t1.jpg" alt="no">
+                <img src="http://img0.imgtn.bdimg.com/it/u=725823361,1622128019&fm=26&gp=0.jpg" alt="no">
             </div>
             <div class="d2">
                 <div class="t">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
                 <div class="btn">购买</div>
             </div>
+        </div>
+        <p class="ft">footer</p>
+        <div class="each">
+            each mixin 这是一些文本
         </div>
     </div>
 </template>
@@ -25,8 +29,8 @@ export default {
 .t {
     color: if(true, rgb(46, 78, 114), red);
 }
-
-@mixin pxToRem($property, $px, $baseFontSize: 75) {
+$baseFontSize: 75;
+@mixin pxToRem($property, $px) {
     #{$property} : $px / $baseFontSize * 1rem
 }
 
@@ -47,6 +51,27 @@ export default {
     @include fontSize(16px);
     color: rgb(253, 255, 254);
     background-color: rgb(94, 92, 92);
+}
+
+$a: (rgb(182, 182, 182));
+.ft{
+    @include pxToRem(margin-top, 30);
+    color: #fff;
+    background: linear-gradient( join($a, rgb(87, 87, 87), comma) );
+    @include fontSize(16px);
+    @include pxToRem(height, 50);
+}
+
+@mixin each($param) {
+    @each $key, $px in $param{
+        #{$key}: $px / $baseFontSize * 1rem ;
+    }
+}
+
+.each{
+    @include each((width: 750, height: 100,margin-top: 30));
+    color: #fff;
+    background-color: #f351c2;
 }
 
 .test-img {
