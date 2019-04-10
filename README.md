@@ -18,7 +18,8 @@
     #{$property} : $px / $baseFontSize * 1rem
 }
 ```
-// 多个属性
+多个属性
+```
 @mixin each($param) {
     @each $key, $px in $param{
         #{$key}: $px / $baseFontSize * 1rem ;
@@ -44,6 +45,7 @@
         #{$prop}: $value
     }
 }
+```
 
 ---
 - 设置根font-size，用 document.documentElement.getBoundingClientRect().width 获取宽(iphone6 为什么值为750，应为视宽375 dpr为2)，除以10 

@@ -1,0 +1,9 @@
+// 将 px 转化为 rem
+// $px 不带单位
+$baseFontSize: 75;
+
+@mixin pxToRem($param) {
+    @each $key, $px in $param{
+        #{$key}: $px / $baseFontSize * 1rem ;
+    }
+}
