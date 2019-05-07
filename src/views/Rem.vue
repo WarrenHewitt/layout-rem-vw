@@ -34,7 +34,7 @@ $baseFontSize: 75;
     #{$property} : $px / $baseFontSize * 1rem
 }
 
-@mixin fontSize($font-size){
+@mixin fontSize($font-size: 16px){
     font-size: $font-size;
     [data-dpr="2"] & {
         font-size: $font-size * 2;
@@ -58,7 +58,7 @@ $a: (rgb(182, 182, 182));
     @include pxToRem(margin-top, 30);
     color: #fff;
     background: linear-gradient( join($a, rgb(87, 87, 87), comma) );
-    @include fontSize(16px);
+    @include fontSize();
     @include pxToRem(height, 50);
 }
 

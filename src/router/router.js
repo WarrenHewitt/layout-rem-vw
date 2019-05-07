@@ -1,27 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Flexible from '../views/Flexible'
-import Home from '../views/Home.vue'
-import Video from '../views/Video.vue'
+import Rem from '../views/Rem'
+import Vw from '../views/Vw'
 
 Vue.use(VueRouter)
 
 const routes = [
     {
-        path: '/',
-        name: 'flexible',
-        component: Flexible
-    },
-    {
-        path: '/about',
-        name: 'about',
-        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+        path: '/rem',
+        name: 'rem',
+        component: Rem
     },
     {
         path: '/video',
         name: 'video',
         component: () => import('../views/Video.vue')
+    },
+    {
+        path: '/vw',
+        name: 'vw',
+        component: Vw
     }
 ]
 
