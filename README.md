@@ -51,6 +51,8 @@ iphone6获取到的width 为什么值为750，因为视宽375 dpr为2
 
 ## vw
 
+单位有vw vh vmin vmax(选vw和vh中较大的值)
+
 这里使用的是baseWidth，注意与rem布局（使用baseFontSize）的差异
 
 baseWidth的值也是与设计稿有关
