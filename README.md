@@ -1,6 +1,3 @@
-> 参考（https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html）
-
-
 # 移动端 rem 和 vw 方式适配
 
 - 文本内容较多时还是px更适用，因为显示内容更多
@@ -27,7 +24,7 @@ $baseFontSize: 75是将设计稿750等分为10份的结果,所以这里的75是�
 因为 flexible 计算出的font-size结果也是10等分
 
 ```css
-@mixin pxToRem($property, $px, $baseFontSize: 75) {
+@mixin pxToRem($property, $px, $baseFontSize: 75) {}
     #{$property} : $px / $baseFontSize * 1rem
 }
 ```
