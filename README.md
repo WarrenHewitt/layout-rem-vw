@@ -58,12 +58,6 @@ baseWidth的值也是与设计稿有关
 /* 基准宽度 */
 $baseWidth: 375;
 
-/* 最小宽度 */
-$minWidth: 320px;
-
-/* 最大宽度 */
-$maxWidth: 540px;
-
 @mixin pxToVw($property, $px){
     #{$property}: $px / $baseWidth * 100vw
 }
